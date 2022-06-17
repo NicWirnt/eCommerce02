@@ -1,0 +1,36 @@
+###GET ADMIN API ###
+
+###ROOT URL
+GET http://localhost:8000/
+
+
+### ADMIN API ###
+### Get method
+GET http://localhost:8000/api/v1/admin
+
+
+###GET ALL ADMIN
+GET http://localhost:8000/api/v1/admin/alladmin
+
+### POST method
+POST http://localhost:8000/api/v1/admin
+Content-Type: application/json
+
+{
+    "fName" : "aaaaa",
+    "lName" : "bbbbb",
+    "phone" : "1234567890",
+    "dob" : "2002-02-20",
+    "address" : "Sydney",
+    "email" : "abce@abc.com",
+    "password" : "123456"
+}
+
+### PATCH method
+PATCH  http://localhost:8000/api/v1/admin
+Content-Type: application/json
+
+{
+    "fName" : "aaaaa",
+    "lName" : "ccccc"
+}
